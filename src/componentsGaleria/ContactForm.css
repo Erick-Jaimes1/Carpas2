@@ -1,0 +1,111 @@
+.contact-section {
+  background-image: url('./ImagesGaleria/4.png'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  color: #5a3e2b; /* Café oscuro */
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.text-container {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background: rgba(255, 248, 230, 0.9); /* Fondo cálido semitransparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-container h2 {
+  color: #c09461; /* Dorado */
+}
+
+.text-container p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.form-container {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 248, 230, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #c09461; /* Dorado */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c09461;
+  border-radius: 5px;
+  background-color: #fff7e6;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #b07540; /* Dorado más oscuro */
+  box-shadow: 0 0 5px #b07540;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #b07540; /* Botón dorado */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a3e2b; /* Café oscuro */
+}
+
+.success-message {
+  color: #2e7d32; /* Verde */
+  background-color: #e8f5e9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.error-message {
+  color: #c62828; /* Rojo */
+  background-color: #ffebee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
