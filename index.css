@@ -1,0 +1,499 @@
+:root {
+    --color-gold: #CBA135;
+    --color-gold-light: #e8c87c;
+    --color-black: #1a1a1a;
+    --color-white: #ffffff;
+    --color-gray: #f8f9fa;
+    --color-dark: #212529;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-gold);
+}
+
+.text-gold {
+    color: var(--color-gold);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Botones personalizados */
+.btn-gold {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border: none;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-gold:hover {
+    color: var(--color-black);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(203, 161, 53, 0.3);
+}
+
+.btn-gold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-gold-light);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.btn-gold:hover::before {
+    width: 100%;
+}
+
+.btn-outline-gold {
+    background-color: transparent;
+    color: var(--color-gold);
+    border: 2px solid var(--color-gold);
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border-color: var(--color-gold);
+}
+
+/* Paquetes más estéticos */
+.package-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(203, 161, 53, 0.10), 0 2px 8px rgba(0,0,0,0.08);
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1.5px solid #f3e3c1;
+    margin-bottom: 20px;
+    min-width: 260px;
+    max-width: 340px;
+}
+
+.package-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 32px rgba(203, 161, 53, 0.15), 0 4px 16px rgba(0,0,0,0.12);
+    border-color: var(--color-gold);
+}
+
+.package-header {
+    background: linear-gradient(90deg, var(--color-gold) 60%, #fffbe6 100%);
+    color: #222;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #f3e3c1;
+}
+
+.package-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.package-body p {
+    color: #6c5c2b;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.package-body button {
+    margin-top: auto;
+    font-weight: 600;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+/* Carousel en móvil */
+@media (max-width: 991.98px) {
+    #paquetesCarousel .package-card {
+        min-width: 80vw;
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+    #paquetesCarousel .carousel-inner {
+        padding-bottom: 2rem;
+    }
+    #paquetesCarousel .carousel-control-prev,
+    #paquetesCarousel .carousel-control-next {
+        filter: invert(1);
+    }
+}
+
+/* Catálogo */
+.catalog-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 300px;
+}
+
+.catalog-card:hover {
+    transform: scale(1.03);
+}
+
+.catalog-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.catalog-card:hover .catalog-img {
+    transform: scale(1.1);
+}
+
+.catalog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.catalog-card:hover .catalog-overlay {
+    opacity: 1;
+}
+
+.catalog-overlay h3 {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.catalog-overlay p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+}
+
+/* Modal del catálogo */
+.catalog-modal-custom .modal-dialog {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.catalog-modal-custom .modal-content {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.catalog-modal-custom .modal-body {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.catalog-modal-custom .swiper {
+    background: transparent;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.catalog-modal-custom .swiper-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-modal-custom .swiper-image-container img {
+    border-radius: 16px;
+    border: 2px solid #222;
+    background: #fff;
+    object-fit: contain;
+    width: auto;
+    height: auto;
+    max-width: 85vw;
+    max-height: 80vh;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Flechas Swiper */
+.catalog-modal-custom .swiper-button-next,
+.catalog-modal-custom .swiper-button-prev {
+    color: #CBA135;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #CBA135;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.catalog-modal-custom .swiper-button-next:hover,
+.catalog-modal-custom .swiper-button-prev:hover {
+    background: #CBA135;
+    color: #fff;
+}
+
+.catalog-modal-custom .swiper-button-next::after,
+.catalog-modal-custom .swiper-button-prev::after {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Paginación */
+.catalog-modal-custom .swiper-pagination-bullet {
+    background: #fff;
+    border: 1.5px solid #CBA135;
+    opacity: 0.6;
+    width: 10px;
+    height: 10px;
+    transition: 0.3s;
+}
+
+.catalog-modal-custom .swiper-pagination-bullet-active {
+    background: #CBA135;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/* Sección Quiénes somos */
+.about-image-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.experience-badge span {
+    font-size: 1.5rem;
+    display: block;
+    line-height: 1;
+}
+
+.experience-badge small {
+    font-size: 0.7rem;
+    display: block;
+}
+
+/* Testimonios */
+.testimonialsSwiper {
+    padding: 20px 0 40px;
+}
+
+.testimonial-card {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-header img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.testimonial-header h5 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.testimonial-header small {
+    font-size: 0.7rem;
+    color: var(--color-gold);
+}
+
+.stars {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.25rem;
+    }
+    
+    .package-header {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+        min-height: 500px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .catalog-card {
+        height: 250px;
+    }
+    
+    .swiper {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .package-card {
+        margin-bottom: 20px;
+    }
+    
+    .experience-badge {
+        padding: 10px;
+    }
+    
+    .experience-badge span {
+        font-size: 1.2rem;
+    }
+}

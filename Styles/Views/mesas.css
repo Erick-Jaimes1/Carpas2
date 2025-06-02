@@ -1,0 +1,197 @@
+/* Estilos para las tarjetas de mesas */
+.table-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+    position: relative;
+}
+
+.table-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+.table-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.table-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.table-card:hover .table-img {
+    transform: scale(1.05);
+}
+
+.table-body {
+    padding: 1.5rem;
+}
+
+.table-body h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.table-details {
+    margin-bottom: 1.5rem;
+}
+
+.table-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.table-details strong {
+    color: var(--color-black);
+}
+
+/* Estilos para secciones de detalle */
+.table-detail-section {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.section-title-left {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.section-title-left::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-gold);
+}
+
+.table-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.table-features li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.table-gallery {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+/* Estilos para tarjetas de combinación */
+.combination-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+}
+
+.combination-img-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.combination-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.combination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.combination-card:hover .combination-img-container img {
+    transform: scale(1.05);
+}
+
+.combination-body {
+    padding: 1.5rem;
+}
+
+.combination-body h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+    color: var(--color-black);
+}
+
+.combination-body p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.combination-link {
+    color: var(--color-gold);
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.combination-card:hover .combination-link {
+    color: var(--color-gold-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .table-img {
+        height: 200px;
+    }
+    
+    .combination-img-container {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table-img {
+        height: 180px;
+    }
+    
+    .section-title-left {
+        text-align: center;
+    }
+    
+    .section-title-left::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .table-features li {
+        font-size: 0.85rem;
+    }
+}

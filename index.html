@@ -1,15 +1,416 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./Images/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Up & Down</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpas Up & Down - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <script src="/Backend/Components/load-menu.js"></script>
+
+    <main>
+        <section class="hero-section position-relative">
+            <img src="/Public/Images/Portada Car.jpeg" alt="Hero" class="img-fluid w-100 hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-text position-absolute text-center text-white">
+                <h1 class="display-3 fw-bold mb-3">Carpas Up & Down</h1>
+                <p class="lead fs-3">Elegancia y estilo para tus eventos especiales</p>
+                <a href="#paquetes" class="btn btn-gold btn-lg mt-3">Ver Paquetes <i class="bi bi-arrow-down ms-2"></i></a>
+            </div>
+        </section>
+
+        <!-- Paquetes Section -->
+<section class="py-5 bg-light" id="paquetes">
+    <div class="container">
+        <h2 class="text-center mb-5 section-title">Paquetes Disponibles</h2>
+        <!-- Carrusel solo visible en móviles -->
+        <div id="paquetesCarousel" class="carousel slide d-block d-lg-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Paquete 1 -->
+                <div class="carousel-item active">
+                    <div class="package-card mx-auto">
+                        <div class="package-header bg-gold text-dark p-3">
+                            <h3 class="h4 mb-0">Paquete 1</h3>
+                        </div>
+                        <div class="package-body p-3">
+                            <p>100 personas: Mesa Tifani, Silla Tifani, Cristalería a gusto</p>
+                            <button class="btn btn-outline-gold w-100">Más información</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Paquete 2 -->
+                <div class="carousel-item">
+                    <div class="package-card mx-auto">
+                        <div class="package-header bg-gold text-dark p-3">
+                            <h3 class="h4 mb-0">Paquete 2</h3>
+                        </div>
+                        <div class="package-body p-3">
+                            <p>150 personas: Mesa Redonda, Silla Plegable, Vajilla Clásica</p>
+                            <button class="btn btn-outline-gold w-100">Más información</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Paquete 3 -->
+                <div class="carousel-item">
+                    <div class="package-card mx-auto">
+                        <div class="package-header bg-gold text-dark p-3">
+                            <h3 class="h4 mb-0">Paquete 3</h3>
+                        </div>
+                        <div class="package-body p-3">
+                            <p>200 personas: Mesa Imperial, Silla Tiffany, Cristalería Premium</p>
+                            <button class="btn btn-outline-gold w-100">Más información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                <div class="package-card mx-auto">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 4</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>50 personas: Mesa de Madera, Silla Vintage, Mantelería Elegante</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="package-card mx-auto">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 5</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>300 personas: Mesas Redondas, Sillas Tiffany, Vajilla Premium</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="package-card mx-auto">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 6</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>80 personas: Mesas Cuadradas, Sillas Clásicas, Cristalería Básica</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="package-card mx-auto">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 7</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>120 personas: Mesas Rectangulares, Sillas Lounge, Decoración Incluida</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="package-card mx-auto">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 8</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>400 personas: Mesas Premium, Sillas Exclusivas, Cristalería de Lujo</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#paquetesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#paquetesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!-- Grid visible en escritorio/tablet -->
+        <div class="row g-4 d-none d-lg-flex">
+            <!-- Paquete 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="package-card h-100">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 1</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>100 personas: Mesa Tifani, Silla Tifani, Cristalería a gusto</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="package-card h-100">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 2</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>150 personas: Mesa Redonda, Silla Plegable, Vajilla Clásica</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="package-card h-100">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 3</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>200 personas: Mesa Imperial, Silla Tiffany, Cristalería Premium</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="package-card h-100">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 4</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>50 personas: Mesa de Madera, Silla Vintage, Mantelería Elegante</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="package-card h-100">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 5</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>300 personas: Mesas Redondas, Sillas Tiffany, Vajilla Premium</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="package-card h-100">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 6</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>80 personas: Mesas Cuadradas, Sillas Clásicas, Cristalería Básica</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="package-card h-100">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 7</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>120 personas: Mesas Rectangulares, Sillas Lounge, Decoración Incluida</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="package-card h-100">
+                    <div class="package-header bg-gold text-dark p-3">
+                        <h3 class="h4 mb-0">Paquete 8</h3>
+                    </div>
+                    <div class="package-body p-3">
+                        <p>400 personas: Mesas Premium, Sillas Exclusivas, Cristalería de Lujo</p>
+                        <button class="btn btn-outline-gold w-100">Más información</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>                    
+
+        <!-- Catálogo Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Nuestro Catálogo</h2>
+                <div class="row g-4">
+                    <!-- Mesas -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="catalog-card" onclick="openCatalogModal('mesas')">
+                            <img src="/Public/ImagesMesasCata/1.jpg" alt="Mesas" class="img-fluid catalog-img">
+                            <div class="catalog-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h3 class="text-white">Mesas</h3>
+                                <p class="text-white-50 mb-0">32 modelos disponibles</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sillas -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="catalog-card" onclick="openCatalogModal('sillas')">
+                            <img src="/Public/ImagesSillasCata/15.jpg" alt="Sillas" class="img-fluid catalog-img">
+                            <div class="catalog-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h3 class="text-white">Sillas</h3>
+                                <p class="text-white-50 mb-0">15 modelos disponibles</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carpas -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="catalog-card" onclick="openCatalogModal('carpas')">
+                            <img src="/Public/ImagesCarpasCata/1.jpg" alt="Carpas" class="img-fluid catalog-img">
+                            <div class="catalog-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h3 class="text-white">Carpas</h3>
+                                <p class="text-white-50 mb-0">56 modelos disponibles</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Loza y Cristalería -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="catalog-card" onclick="openCatalogModal('cristaleria')">
+                            <img src="/Public/ImagesCristaleriaCata/PortadaCopa.jpg" alt="Loza y Cristalería" class="img-fluid catalog-img">
+                            <div class="catalog-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h3 class="text-white">Loza y Cristalería</h3>
+                                <p class="text-white-50 mb-0">16 modelos disponibles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Modal del Catálogo -->
+<div class="modal fade catalog-modal-custom" id="catalogModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0" style="background:transparent;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Swiper -->
+                <div class="swiper catalogSwiper">
+                    <div class="swiper-wrapper" id="catalogSwiperWrapper">
+                        <!-- Las imágenes se cargarán dinámicamente aquí -->
+                    </div>
+                    <!-- Controles Swiper -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Pregunta Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="section-title mb-4">¿Quiénes somos?</h2>
+                        <p class="lead">
+                            En Carpas Up & Down, somos expertos en hacer de tu evento algo inolvidable.
+                            Nuestro objetivo es ofrecer soluciones personalizadas y confiables para tu evento.
+                            Contamos con una amplia variedad de carpas y mobiliario para bodas, fiestas y eventos corporativos. 
+                            Haz que tu evento sea un éxito!
+                        </p>
+                        <a href="/nosotros" class="btn btn-gold mt-3">Conoce más</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="/Public/Images/Portada.jpeg" alt="Imagen de mobiliario" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comentarios Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">¿Qué dicen nuestros clientes?</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="testimonial-card h-100">
+                            <div class="testimonial-header d-flex align-items-center mb-3">
+                                <img src="/Images/foto.jpg" alt="Usuario 1" class="rounded-circle me-3" width="60">
+                                <div>
+                                    <div class="stars text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5 class="mb-0">María López</h5>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Excelente servicio y atención. Volveré sin duda alguna. ¡Muy recomendado!"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="testimonial-card h-100">
+                            <div class="testimonial-header d-flex align-items-center mb-3">
+                                <img src="/Images/foto.jpg" alt="Usuario 2" class="rounded-circle me-3" width="60">
+                                <div>
+                                    <div class="stars text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <h5 class="mb-0">Juan Pérez</h5>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Todo perfecto para nuestra boda. El mobiliario era exactamente como lo imaginamos."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="testimonial-card h-100">
+                            <div class="testimonial-header d-flex align-items-center mb-3">
+                                <img src="/Images/foto.jpg" alt="Usuario 3" class="rounded-circle me-3" width="60">
+                                <div>
+                                    <div class="stars text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <h5 class="mb-0">Ana García</h5>
+                                </div>
+                            </div>
+                            <p class="mb-0">"La carpa resistió perfectamente la lluvia en nuestro evento. ¡Gracias por salvar nuestro día!"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="testimonial-card h-100">
+                            <div class="testimonial-header d-flex align-items-center mb-3">
+                                <img src="/Images/foto.jpg" alt="Usuario 4" class="rounded-circle me-3" width="60">
+                                <div>
+                                    <div class="stars text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <h5 class="mb-0">Carlos Martínez</h5>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Profesionales desde el primer contacto hasta la recogida del mobiliario. 100% recomendados."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <div id="footer-container"></div>
+    <script src="/Backend/Components/load-footer.js"></script>
+    <script src="/Backend/catologo-index.js"></script>
+</body>
 </html>

@@ -1,0 +1,175 @@
+/* Estilos para las tarjetas de sillas */
+.chair-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+    position: relative;
+}
+
+.chair-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+.chair-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.chair-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.chair-card:hover .chair-img {
+    transform: scale(1.05);
+}
+
+.chair-body {
+    padding: 1.5rem;
+}
+
+.chair-body h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.chair-details {
+    margin-bottom: 1.5rem;
+}
+
+.chair-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.chair-details strong {
+    color: var(--color-black);
+}
+
+/* Estilos para secciones de detalle */
+.chair-detail-section {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.chair-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.chair-features li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.chair-gallery {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+/* Estilos para tarjetas de personalización */
+.custom-card {
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.custom-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+}
+
+.custom-card h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.custom-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.custom-link {
+    color: var(--color-gold);
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.custom-card:hover .custom-link {
+    color: var(--color-gold-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .chair-img {
+        height: 200px;
+    }
+    
+    .section-title-left {
+        text-align: center;
+    }
+    
+    .section-title-left::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 576px) {
+    .chair-img {
+        height: 180px;
+    }
+    
+    .chair-features li {
+        font-size: 0.85rem;
+    }
+    
+    .custom-card {
+        padding: 1.5rem 1rem;
+    }
+}

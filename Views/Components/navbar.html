@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpas Up & Down</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/Components/navbar.css">
+</head>
+<body>
+    <!-- Footer Superior Fijo -->
+    <div class="header-footer">
+        <div class="header-footer-brand">
+            <h1 class="header-footer-brand-name">Carpas Up & Down</h1>
+            <p class="header-footer-slogan">Elegancia para tu evento</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header id="mainHeader">
+        <nav>
+            <!-- Menú izquierdo -->
+            <ul class="left-menu">
+                <li>
+                    <a href="/index.html">INICIO</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/Views/mobiliario.html">MOBILIARIO</a>
+                    <ul class="submenu">
+                        <li><a href="/Views/Views/mesas.html">Mesas</a></li>
+                        <li><a href="/Views/Views/sillas.html">Sillas</a></li>
+                        <li><a href="/Views/Views/cristaleria.html">Cristalería</a></li>
+                        <li><a href="/Views/Views/vajillas.html">Vajillas</a></li>
+                        <li><a href="/Views/Views/manteleria.html">Mantelería</a></li>
+                        <li><a href="/Views/Views/salas.html">Salas</a></li>
+                        <li><a href="/Views/Views/carpas.html">Carpas</a></li>
+                        <li><a href="/Views/Views/tarimas.html">Tarimas</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="logo">
+    <a href="/index.html">
+        <img src="/logo.png" alt="Logo Carpas Up & Down">
+    </a>
+</div>
+
+            <!-- Menú derecho -->
+            <ul class="right-menu">
+                <li>
+                    <a href="/Views/nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="/Views/galeria.html">GALERÍA</a>
+                </li>
+            </ul>
+
+            <!-- Ícono del menú hamburguesa -->
+            <button class="hamburger" id="hamburgerButton">☰</button>
+        </nav>
+
+        <!-- Menú colapsado para móviles -->
+        <ul class="menu-collapsed" id="collapsedMenu">
+            <li>
+                <a href="/index.html">INICIO</a>
+            </li>
+            <li class="menu-item" id="mobileMenuItem">
+                <a href="/Views/mobiliario.html">
+        MOBILIARIO
+        <span class="submenu-toggle" id="mobileSubmenuToggle" style="margin-left:6px;">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                <path d="M6 8l4 4 4-4" stroke="#CBA135" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+    </a>
+                <ul class="submenu" id="mobileSubmenu">
+                    <li><a href="/Views/Views/mesas.html">Mesas</a></li>
+                        <li><a href="/Views/Views/sillas.html">Sillas</a></li>
+                        <li><a href="/Views/Views/cristaleria.html">Cristalería</a></li>
+                        <li><a href="/Views/Views/vajillas.html">Vajillas</a></li>
+                        <li><a href="/Views/Views/manteleria.html">Mantelería</a></li>
+                        <li><a href="/Views/Views/salas.html">Salas</a></li>
+                        <li><a href="/Views/Views/carpas.html">Carpas</a></li>
+                        <li><a href="/Views/Views/tarimas.html">Tarimas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/Views/nosotros.html">NOSOTROS</a>
+            </li>
+            <li>
+                <a href="/Views/galeria.html">GALERÍA</a>
+            </li>
+        </ul>
+
+        <!-- Overlay para móviles -->
+        <div class="overlay" id="menuOverlay"></div>
+    </header>
+
+    <!-- Scripts -->
+    <script>
+        fetch('/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+        window.initHamburgerMenu(); // Aquí lo llamas
+    });
+
+    </script>
+</body>
+</html>

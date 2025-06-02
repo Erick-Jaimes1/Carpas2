@@ -1,0 +1,308 @@
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Estilos para las tarjetas de categorías */
+.category-card {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    text-decoration: none;
+    color: var(--color-black);
+    height: 100%;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.category-img-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.category-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover .category-img-container img {
+    transform: scale(1.05);
+}
+
+.category-body {
+    padding: 1.5rem;
+}
+
+.category-body h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+    color: var(--color-black);
+}
+
+.category-body p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.category-link {
+    color: var(--color-gold);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover .category-link {
+    color: var(--color-gold-light);
+    transform: translateX(5px);
+}
+
+/* Estilos para las tarjetas de productos */
+.product-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+    position: relative;
+}
+
+.product-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-body {
+    padding: 1.5rem;
+}
+
+.product-body h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.product-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.product-features li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Estilos para tarjetas de productos pequeñas */
+.product-card-sm {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+}
+
+.product-card-sm img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card-sm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.product-card-sm:hover img {
+    transform: scale(1.05);
+}
+
+.product-body-sm {
+    padding: 1.25rem;
+}
+
+.product-body-sm h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+    color: var(--color-black);
+    font-size: 1.1rem;
+}
+
+.product-body-sm p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+/* Estilos para tarjetas de cristalería */
+.glass-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.glass-header {
+    padding: 1rem 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.glass-header h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    color: var(--color-black);
+}
+
+.glass-code {
+    background-color: #f5f5f5;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.glass-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 1rem;
+    transition: transform 0.5s ease;
+}
+
+.glass-card:hover img {
+    transform: scale(1.05);
+}
+
+.glass-body {
+    padding: 0 1rem 1.5rem;
+}
+
+.glass-body p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.glass-link {
+    color: var(--color-gold);
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover .glass-link {
+    color: var(--color-gold-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .category-img-container {
+        height: 150px;
+    }
+    
+    .product-card img {
+        height: 200px;
+    }
+    
+    .product-card-sm img {
+        height: 150px;
+    }
+    
+    .glass-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .category-img-container {
+        height: 120px;
+    }
+    
+    .product-card img {
+        height: 180px;
+    }
+    
+    .product-card-sm img {
+        height: 120px;
+    }
+    
+    .glass-card img {
+        height: 150px;
+    }
+}

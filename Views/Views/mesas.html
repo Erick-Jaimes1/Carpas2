@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesas para Eventos - Carpas Up & Down</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/Views/mesas.css">
+</head>
+<body>
+    <script src="/Backend/Components/load-menu.js"></script>
+
+    <main>
+        <!-- Hero Section para Mesas -->
+        <section class="hero-section position-relative">
+            <img src="/Public/Images/Mesas/hero-mesas.jpg" alt="Mesas para eventos" class="img-fluid w-100 hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-text position-absolute text-center text-white">
+                <h1 class="display-3 fw-bold mb-3">Mesas Elegantes</h1>
+                <p class="lead fs-3">Para banquetes y eventos memorables</p>
+            </div>
+        </section>
+
+        <!-- Tipos de Mesas -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Nuestros Modelos de Mesas</h2>
+                <div class="row g-4">
+                    <!-- Mesa de Fibra de Vidrio -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="table-card">
+                            <div class="table-badge">Popular</div>
+                            <img src="/Public/ImagesMesasCata/11.jpg" alt="Mesa de Fibra de Vidrio" class="img-fluid table-img">
+                            <div class="table-body">
+                                <h3>Mesa de Fibra de Vidrio</h3>
+                                <div class="table-details">
+                                    <p><strong>Formato:</strong> Redonda y rectangular (tablón)</p>
+                                    <p><strong>Capacidad:</strong> 8-10 personas (redonda)</p>
+                                    <p><strong>Características:</strong> Ligera y resistente</p>
+                                </div>
+                                <a href="#fibra-vidrio" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mesa Vintage -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="table-card">
+                            <div class="table-badge">Clásica</div>
+                            <img src="/Public/Images/mesas.jpg" alt="Mesa Vintage" class="img-fluid table-img">
+                            <div class="table-body">
+                                <h3>Mesa Vintage</h3>
+                                <div class="table-details">
+                                    <p><strong>Formato:</strong> Redonda y rectangular</p>
+                                    <p><strong>Material:</strong> Madera natural</p>
+                                    <p><strong>Estilo:</strong> Rústico elegante</p>
+                                </div>
+                                <a href="#vintage" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mesa Tipo Mármol -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="table-card">
+                            <div class="table-badge">Premium</div>
+                            <img src="/Public/ImagesMesasCata/5.jpg" alt="Mesa Tipo Mármol" class="img-fluid table-img">
+                            <div class="table-body">
+                                <h3>Mesa Tipo Mármol</h3>
+                                <div class="table-details">
+                                    <p><strong>Formato:</strong> Redonda y rectangular</p>
+                                    <p><strong>Detalles:</strong> Herrería dorada</p>
+                                    <p><strong>Acabado:</strong> Simulación mármol</p>
+                                </div>
+                                <a href="#marmol" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mesa Imperial -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="table-card">
+                            <div class="table-badge">Exclusiva</div>
+                            <img src="/Public/Images/Mesas/imperial.jpg" alt="Mesa Imperial" class="img-fluid table-img">
+                            <div class="table-body">
+                                <h3>Mesa Imperial</h3>
+                                <div class="table-details">
+                                    <p><strong>Formato:</strong> Redonda</p>
+                                    <p><strong>Material:</strong> Madera lacada</p>
+                                    <p><strong>Estilo:</strong> Elegante formal</p>
+                                </div>
+                                <a href="#imperial" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detalles por Tipo de Mesa -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <!-- Mesa de Fibra de Vidrio -->
+                <div class="table-detail-section" id="fibra-vidrio">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Mesa de Fibra de Vidrio</h2>
+                            <p class="lead">La opción práctica y versátil para tus eventos.</p>
+                            <ul class="table-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Formato:</strong> Redonda (1.5m diámetro) y rectangular (tablón de 1.8m x 0.75m)</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Capacidad:</strong> 8-10 personas (redonda), 6-8 personas por tablón</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Peso:</strong> Ligera (fácil transporte y montaje)</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Resistencia:</strong> Ideal para eventos al aire libre</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Color:</strong> Blanco estándar (otros colores bajo pedido)</li>
+                            </ul>
+                            <a href="/contacto" class="btn btn-dark mt-3">Cotizar ahora</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="table-gallery">
+                                <img src="/Public/Images/Mesas/fibra-vidrio-1.jpg" alt="Mesa redonda fibra de vidrio" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Mesas/fibra-vidrio-2.jpg" alt="Mesa rectangular fibra de vidrio" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Mesas/fibra-vidrio-3.jpg" alt="Detalle fibra de vidrio" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mesa Vintage -->
+                <div class="table-detail-section mt-5 pt-5" id="vintage">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Mesa Vintage</h2>
+                            <p class="lead">Elegancia rústica con estilo tradicional.</p>
+                            <ul class="table-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Formato:</strong> Redonda (1.6m diámetro) y rectangular (2m x 0.9m)</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Material:</strong> Madera de pino tratada</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Acabado:</strong> Natural o envejecido</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Patas:</strong> Diseño cruzado (crossback)</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Recomendación:</strong> Ideal para bodas rústicas y eventos campestres</li>
+                            </ul>
+                            <a href="/contacto" class="btn btn-dark mt-3">Cotizar ahora</a>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="table-gallery">
+                                <img src="/Public/Images/Mesas/vintage-1.jpg" alt="Mesa redonda vintage" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Mesas/vintage-2.jpg" alt="Mesa rectangular vintage" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Mesas/vintage-3.jpg" alt="Detalle madera vintage" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mesa Tipo Mármol -->
+                <div class="table-detail-section mt-5 pt-5" id="marmol">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Mesa Tipo Mármol</h2>
+                            <p class="lead">Lujo y sofisticación para eventos exclusivos.</p>
+                            <ul class="table-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Formato:</strong> Redonda (1.8m diámetro) y rectangular (2.2m x 1m)</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Base:</strong> Herrería dorada o plateada</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Superficie:</strong> Formica con acabado mármol</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Diseño:</strong> Variedad de vetas y colores</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Recomendación:</strong> Bodas elegantes y eventos corporativos</li>
+                            </ul>
+                            <a href="/contacto" class="btn btn-dark mt-3">Cotizar ahora</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="table-gallery">
+                                <img src="/Public/Images/Mesas/marmol-1.jpg" alt="Mesa redonda tipo mármol" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Mesas/marmol-2.jpg" alt="Mesa rectangular tipo mármol" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Mesas/marmol-3.jpg" alt="Detalle herrería dorada" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mesa Imperial -->
+                <div class="table-detail-section mt-5 pt-5" id="imperial">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Mesa Imperial</h2>
+                            <p class="lead">El máximo en elegancia y distinción.</p>
+                            <ul class="table-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Formato:</strong> Redonda (2m diámetro)</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Material:</strong> Madera lacada en negro o blanco</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Detalles:</strong> Bordes tallados y patas torneadas</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Capacidad:</strong> 10-12 personas</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Recomendación:</strong> Eventos de gala y recepciones exclusivas</li>
+                            </ul>
+                            <a href="/contacto" class="btn btn-dark mt-3">Cotizar ahora</a>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="table-gallery">
+                                <img src="/Public/Images/Mesas/imperial-1.jpg" alt="Mesa imperial completa" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Mesas/imperial-2.jpg" alt="Detalle madera lacada" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Mesas/imperial-3.jpg" alt="Mesa imperial con decoración" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recomendaciones de Combinación -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Combinaciones Recomendadas</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="combination-card">
+                            <div class="combination-img-container">
+                                <img src="/Public/Images/Combinaciones/mesa-vintage-sillas-crossback.jpg" alt="Mesa vintage con sillas crossback" class="img-fluid">
+                            </div>
+                            <div class="combination-body">
+                                <h3>Estilo Rústico</h3>
+                                <p>Mesa Vintage + Sillas Crossback</p>
+                                <a href="/Views/Views/sillas.html#crossback" class="combination-link">Ver sillas recomendadas</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="combination-card">
+                            <div class="combination-img-container">
+                                <img src="/Public/Images/Combinaciones/mesa-marmol-sillas-tiffany.jpg" alt="Mesa mármol con sillas tiffany" class="img-fluid">
+                            </div>
+                            <div class="combination-body">
+                                <h3>Estilo Elegante</h3>
+                                <p>Mesa Tipo Mármol + Sillas Tiffany</p>
+                                <a href="/Views/Views/sillas.html#tiffany" class="combination-link">Ver sillas recomendadas</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="combination-card">
+                            <div class="combination-img-container">
+                                <img src="/Public/Images/Combinaciones/mesa-imperial-sillas-sewin.jpg" alt="Mesa imperial con sillas sewin" class="img-fluid">
+                            </div>
+                            <div class="combination-body">
+                                <h3>Estilo Premium</h3>
+                                <p>Mesa Imperial + Sillas Sewin</p>
+                                <a href="/Views/Views/sillas.html#sewin" class="combination-link">Ver sillas recomendadas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-5 bg-gold text-dark">
+            <div class="container text-center">
+                <h2 class="mb-4">¿Necesitas asesoría para elegir tus mesas?</h2>
+                <p class="lead mb-4">Nuestros expertos te ayudarán a seleccionar el modelo perfecto para tu evento.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="/contacto" class="btn btn-dark btn-lg px-4">Contáctanos</a>
+                    <a href="/galeria" class="btn btn-outline-dark btn-lg px-4">Ver Galería</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer-container"></div>
+    <script src="/Backend/Components/load-footer.js"></script>
+</body>
+</html>

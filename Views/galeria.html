@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpas Up & Down - Galería</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="/Styles/galeria.css">
+</head>
+<body>
+    <!-- Menú se cargará dinámicamente -->
+    <script src="/Backend/Components/load-menu.js"></script>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Hero Section -->
+        <section class="gallery-hero d-flex align-items-center justify-content-center text-center text-white">
+            <div class="container">
+                <h1 class="display-3 fw-bold mb-3">Nuestra Galería</h1>
+                <p class="lead fs-4">Explora nuestros trabajos y eventos realizados</p>
+                <a href="#gallery" class="btn btn-gold btn-lg mt-3">Ver Galería <i class="bi bi-arrow-down ms-2"></i></a>
+            </div>
+        </section>
+
+        <!-- Gallery Filter -->
+        <section class="gallery-filter py-5 bg-light" id="gallery">
+            <div class="container">
+                <div class="filter-buttons d-flex flex-wrap justify-content-center gap-3">
+                    <button class="filter-btn btn btn-outline-gold active" data-filter="all">Todo</button>
+                    <button class="filter-btn btn btn-outline-gold" data-filter="carpas">Carpas</button>
+                    <button class="filter-btn btn btn-outline-gold" data-filter="mesas">Mesas</button>
+                    <button class="filter-btn btn btn-outline-gold" data-filter="sillas">Sillas</button>
+                    <button class="filter-btn btn btn-outline-gold" data-filter="cristaleria">Cristaleria</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-container py-5">
+            <div class="container">
+                <div class="gallery-grid row g-4" id="galleryGrid">
+                    <!-- Las imágenes se cargarán dinámicamente aquí -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" class="img-fluid rounded" src="" alt="">
+                        <div class="mt-4">
+                            <h3 id="modalTitle" class="fw-bold"></h3>
+                            <p id="modalDescription" class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/Backend/galeria-load.js"></script>
+    <div id="footer-container"></div>
+    <script src="/Backend/Components/load-footer.js"></script>
+</body>
+</html>

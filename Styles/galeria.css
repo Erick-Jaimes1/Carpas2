@@ -1,0 +1,207 @@
+:root {
+    --color-gold: #CBA135;
+    --color-gold-light: #e8c87c;
+    --color-black: #1a1a1a;
+    --color-white: #ffffff;
+    --color-gray: #f8f9fa;
+    --color-dark: #212529;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.gallery-hero {
+    height: 70vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Images/Galeria/hero-bg.jpg') no-repeat center center/cover;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+    position: relative;
+}
+
+.gallery-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, var(--color-white));
+}
+
+.gallery-hero h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+}
+
+.gallery-hero p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Botones personalizados */
+.btn-gold {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border: none;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-gold:hover {
+    color: var(--color-black);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(203, 161, 53, 0.3);
+}
+
+.btn-gold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-gold-light);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.btn-gold:hover::before {
+    width: 100%;
+}
+
+.btn-outline-gold {
+    background-color: transparent;
+    color: var(--color-gold);
+    border: 2px solid var(--color-gold);
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover, .btn-outline-gold.active {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border-color: var(--color-gold);
+}
+
+/* Gallery Grid */
+.gallery-container {
+    padding: 5rem 0;
+}
+
+.gallery-item {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-container {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+.gallery-item-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--color-white);
+}
+
+.gallery-item:hover .gallery-item-overlay {
+    opacity: 1;
+}
+
+/* Modal */
+.modal-content {
+    border: none;
+    background-color: transparent;
+}
+
+.modal-img {
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .gallery-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .gallery-hero p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-hero {
+        height: 60vh;
+        margin-top: 80px;
+    }
+    
+    .gallery-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .card-img-container {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .gallery-hero p {
+        font-size: 1rem;
+    }
+    
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+    
+    .btn-outline-gold {
+        padding: 0.35rem 1rem;
+        font-size: 0.85rem;
+    }
+}

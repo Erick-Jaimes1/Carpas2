@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sillas para Eventos - Carpas Up & Down</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/Views/sillas.css">
+</head>
+<body>
+    <script src="/Backend/Components/load-menu.js"></script>
+
+    <main>
+        <!-- Hero Section para Sillas -->
+        <section class="hero-section position-relative">
+            <img src="/Public/Images/Sillas/hero-sillas.jpg" alt="Sillas para eventos" class="img-fluid w-100 hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-text position-absolute text-center text-white">
+                <h1 class="display-3 fw-bold mb-3">Sillas Elegantes</h1>
+                <p class="lead fs-3">Comodidad y estilo para tus invitados</p>
+            </div>
+        </section>
+
+        <!-- Tipos de Sillas -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Nuestros Modelos de Sillas</h2>
+                <div class="row g-4">
+                    <!-- Silla Tiffany -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="chair-card">
+                            <div class="chair-badge">Más popular</div>
+                            <img src="/Public/Images/Sillas/tiffany.jpg" alt="Silla Tiffany" class="img-fluid chair-img">
+                            <div class="chair-body">
+                                <h3>Silla Tiffany</h3>
+                                <div class="chair-details">
+                                    <p><strong>Estilo:</strong> Clásico elegante</p>
+                                    <p><strong>Colores:</strong> Blanca, chocolate, dorada</p>
+                                    <p><strong>Material:</strong> Estructura metálica con tapizado</p>
+                                </div>
+                                <a href="#tiffany" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Silla Smith -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="chair-card">
+                            <div class="chair-badge">Moderno</div>
+                            <img src="/Public/Images/Sillas/smith.jpg" alt="Silla Smith" class="img-fluid chair-img">
+                            <div class="chair-body">
+                                <h3>Silla Smith</h3>
+                                <div class="chair-details">
+                                    <p><strong>Estilo:</strong> Contemporáneo</p>
+                                    <p><strong>Colores:</strong> Azul, rosa, beige</p>
+                                    <p><strong>Material:</strong> Madera con cojín</p>
+                                </div>
+                                <a href="#smith" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Silla Sewin -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="chair-card">
+                            <div class="chair-badge">Premium</div>
+                            <img src="/Public/Images/Sillas/sewin.jpg" alt="Silla Sewin" class="img-fluid chair-img">
+                            <div class="chair-body">
+                                <h3>Silla Sewin</h3>
+                                <div class="chair-details">
+                                    <p><strong>Estilo:</strong> Sofisticado</p>
+                                    <p><strong>Colores:</strong> Beige, gris, azul claro</p>
+                                    <p><strong>Material:</strong> Madera con tapizado premium</p>
+                                </div>
+                                <a href="#sewin" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Silla Crossback -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="chair-card">
+                            <div class="chair-badge">Rústico</div>
+                            <img src="/Public/Images/Sillas/crossback.jpg" alt="Silla Crossback" class="img-fluid chair-img">
+                            <div class="chair-body">
+                                <h3>Silla Crossback</h3>
+                                <div class="chair-details">
+                                    <p><strong>Estilo:</strong> Vintage campestre</p>
+                                    <p><strong>Colores:</strong> Madera natural, envejecida</p>
+                                    <p><strong>Material:</strong> Madera de pino</p>
+                                </div>
+                                <a href="#crossback" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detalles por Tipo de Silla -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <!-- Silla Tiffany -->
+                <div class="chair-detail-section" id="tiffany">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Silla Tiffany</h2>
+                            <p class="lead">Elegancia atemporal para eventos formales.</p>
+                            <ul class="chair-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Estructura:</strong> Metal resistente en acabado dorado, plateado o negro</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Asiento:</strong> Tapizado en tela premium con relleno de alta densidad</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Respaldo:</strong> Diseño curvo para mayor comodidad</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Patas:</strong> Terminación en punta de lanza para proteger pisos</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Recomendación:</strong> Bodas elegantes, eventos de gala y recepciones formales</li>
+                            </ul>
+                            <div class="d-flex gap-3">
+                                <a href="/contacto" class="btn btn-dark">Cotizar ahora</a>
+                                <a href="/Views/Views/mesas.html#marmol" class="btn btn-outline-gold">Ver mesas compatibles</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="chair-gallery">
+                                <img src="/Public/Images/Sillas/tiffany-1.jpg" alt="Silla Tiffany frontal" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Sillas/tiffany-2.jpg" alt="Silla Tiffany lateral" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Sillas/tiffany-3.jpg" alt="Silla Tiffany en evento" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Silla Smith -->
+                <div class="chair-detail-section mt-5 pt-5" id="smith">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Silla Smith</h2>
+                            <p class="lead">Modernidad y color para eventos contemporáneos.</p>
+                            <ul class="chair-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Estructura:</strong> Madera de haya con acabado liso</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Asiento:</strong> Cojín desmontable en diversos colores</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Respaldo:</strong> Diseño ergonómico semicircular</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Patas:</strong> Terminación en goma protectora</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Recomendación:</strong> Eventos modernos, bodas temáticas y reuniones sociales</li>
+                            </ul>
+                            <div class="d-flex gap-3">
+                                <a href="/contacto" class="btn btn-dark">Cotizar ahora</a>
+                                <a href="/Views/Views/mesas.html#fibra-vidrio" class="btn btn-outline-gold">Ver mesas compatibles</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="chair-gallery">
+                                <img src="/Public/Images/Sillas/smith-1.jpg" alt="Silla Smith frontal" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Sillas/smith-2.jpg" alt="Silla Smith azul" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Sillas/smith-3.jpg" alt="Silla Smith rosa" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Silla Sewin -->
+                <div class="chair-detail-section mt-5 pt-5" id="sewin">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Silla Sewin</h2>
+                            <p class="lead">Lujo y comodidad para eventos exclusivos.</p>
+                            <ul class="chair-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Estructura:</strong> Madera de roble con acabado satinado</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Asiento:</strong> Tapizado en piel ecológica o tela de alta gama</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Respaldo:</strong> Alto con diseño acolchado</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Patas:</strong> Torneadas con terminación en metal</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Recomendación:</strong> Eventos VIP, bodas de lujo y recepciones exclusivas</li>
+                            </ul>
+                            <div class="d-flex gap-3">
+                                <a href="/contacto" class="btn btn-dark">Cotizar ahora</a>
+                                <a href="/Views/Views/mesas.html#imperial" class="btn btn-outline-gold">Ver mesas compatibles</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="chair-gallery">
+                                <img src="/Public/Images/Sillas/sewin-1.jpg" alt="Silla Sewin frontal" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Sillas/sewin-2.jpg" alt="Silla Sewin beige" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Sillas/sewin-3.jpg" alt="Silla Sewin en evento" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Silla Crossback -->
+                <div class="chair-detail-section mt-5 pt-5" id="crossback">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Silla Crossback</h2>
+                            <p class="lead">Encanto rústico para eventos campestres.</p>
+                            <ul class="chair-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Estructura:</strong> Madera de pino macizo</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Asiento:</strong> Madera lisa o con diseño de tablillas</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Respaldo:</strong> Diseño cruzado característico</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Acabado:</strong> Natural, envejecido o pintado</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Recomendación:</strong> Bodas rústicas, eventos al aire libre y fiestas temáticas</li>
+                            </ul>
+                            <div class="d-flex gap-3">
+                                <a href="/contacto" class="btn btn-dark">Cotizar ahora</a>
+                                <a href="/Views/Views/mesas.html#vintage" class="btn btn-outline-gold">Ver mesas compatibles</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="chair-gallery">
+                                <img src="/Public/Images/Sillas/crossback-1.jpg" alt="Silla Crossback frontal" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Sillas/crossback-2.jpg" alt="Silla Crossback natural" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Sillas/crossback-3.jpg" alt="Silla Crossback en evento" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-5 bg-gold text-dark">
+            <div class="container text-center">
+                <h2 class="mb-4">¿Listo para elegir las sillas perfectas?</h2>
+                <p class="lead mb-4">Contáctanos y crearemos el ambiente ideal para tu evento.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="/contacto" class="btn btn-dark btn-lg px-4">Cotizar ahora</a>
+                    <a href="/Views/mobiliario.html" class="btn btn-outline-dark btn-lg px-4">Ver mobiliario completo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer-container"></div>
+    <script src="/Backend/Components/load-footer.js"></script>
+</body>
+</html>
