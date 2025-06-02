@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vajillas para Eventos - Carpas Up & Down</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/Styles/Views/vajillas.css">
+</head>
+<body>
+    <script src="/Backend/Components/load-menu.js"></script>
+
+    <main>
+        <!-- Hero Section para Vajillas -->
+        <section class="hero-section position-relative">
+            <img src="/Public/Images/Vajillas/hero-vajillas.jpg" alt="Vajillas para eventos" class="img-fluid w-100 hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-text position-absolute text-center text-white">
+                <h1 class="display-3 fw-bold mb-3">Vajillas Elegantes</h1>
+                <p class="lead fs-3">El complemento perfecto para tu mesa de evento</p>
+            </div>
+        </section>
+
+        <!-- Tipos de Vajillas -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Nuestras Colecciones de Vajillas</h2>
+                
+                <!-- Talavera -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="sub-section-title mb-4"><i class="bi bi-flower1 text-gold me-2"></i> Talavera</h3>
+                    </div>
+                    
+                    <!-- Plato Llano Talavera -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="plato-llano-talavera">
+                            <div class="dish-badge">Popular</div>
+                            <img src="/Public/Images/Vajillas/plato-llano-talavera.jpg" alt="Plato Llano Talavera" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Plato Llano</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Decorado con patrones florales en tonos azul y blanco.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Diámetro: 27cm</span>
+                                </div>
+                                <a href="#talavera-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Taza de Talavera -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="taza-talavera">
+                            <div class="dish-badge">Clásico</div>
+                            <img src="/Public/Images/Vajillas/taza-talavera.jpg" alt="Taza de Talavera" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Taza con Plato</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Decorada con flores y puntos en azul y detalles en rojo.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-cup-fill text-gold"></i> Capacidad: 250ml</span>
+                                </div>
+                                <a href="#talavera-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Plato Hondo Talavera -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="plato-hondo-talavera">
+                            <img src="/Public/Images/Vajillas/plato-hondo-talavera.jpg" alt="Plato Hondo Talavera" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Plato Hondo</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Ideal para sopas y cremas, con diseño tradicional.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Diámetro: 22cm</span>
+                                </div>
+                                <a href="#talavera-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Set Completo Talavera -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="set-talavera">
+                            <div class="dish-badge">Completo</div>
+                            <img src="/Public/Images/Vajillas/set-talavera.jpg" alt="Set Talavera" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Set Talavera</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Juego completo para 6 personas con diseño tradicional.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-people-fill text-gold"></i> Para 6 personas</span>
+                                </div>
+                                <a href="#talavera-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Barro -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="sub-section-title mb-4"><i class="bi bi-moisture text-gold me-2"></i> Barro</h3>
+                    </div>
+                    
+                    <!-- Plato Llano Barro -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="plato-llano-barro">
+                            <img src="/Public/Images/Vajillas/plato-llano-barro.jpg" alt="Plato Llano Barro" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Plato Llano</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Barro rojizo con decoración de puntos blancos y verdes.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Diámetro: 28cm</span>
+                                </div>
+                                <a href="#barro-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Plato Hondo Barro -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="plato-hondo-barro">
+                            <div class="dish-badge">Nuevo</div>
+                            <img src="/Public/Images/Vajillas/plato-hondo-barro.jpg" alt="Plato Hondo Barro" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Plato Hondo</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Perfecto para sopas y guisados tradicionales.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Diámetro: 20cm</span>
+                                </div>
+                                <a href="#barro-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarro de Barro -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="tarro-barro">
+                            <img src="/Public/Images/Vajillas/tarro-barro.jpg" alt="Tarro de Barro" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Tarro de Barro</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Con asa, decorado con líneas negras para aguas frescas.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 1L</span>
+                                </div>
+                                <a href="#barro-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Set Barro -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="set-barro">
+                            <div class="dish-badge">Completo</div>
+                            <img src="/Public/Images/Vajillas/set-barro.jpg" alt="Set Barro" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Set Barro</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Juego completo para servicio rústico de 6 personas.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-people-fill text-gold"></i> Para 6 personas</span>
+                                </div>
+                                <a href="#barro-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Porcelana -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="sub-section-title mb-4"><i class="bi bi-stars text-gold me-2"></i> Porcelana</h3>
+                    </div>
+                    
+                    <!-- Plato Llano Porcelana -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="plato-llano-porcelana">
+                            <div class="dish-badge">Elegante</div>
+                            <img src="/Public/Images/Vajillas/plato-llano-porcelana.jpg" alt="Plato Llano Porcelana" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Plato Llano</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Blanco con filete dorado, ideal para eventos formales.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Diámetro: 30cm</span>
+                                </div>
+                                <a href="#porcelana-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Plato Hondo Porcelana -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="plato-hondo-porcelana">
+                            <img src="/Public/Images/Vajillas/plato-hondo-porcelana.jpg" alt="Plato Hondo Porcelana" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Plato Hondo</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Con diseño clásico y filete dorado para sopas.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Diámetro: 24cm</span>
+                                </div>
+                                <a href="#porcelana-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Taza Porcelana -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="taza-porcelana">
+                            <img src="/Public/Images/Vajillas/taza-porcelana.jpg" alt="Taza Porcelana" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Taza con Plato</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Set para café o té con diseño clásico elegante.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-cup-fill text-gold"></i> Capacidad: 200ml</span>
+                                </div>
+                                <a href="#porcelana-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Set Porcelana -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="dish-card" id="set-porcelana">
+                            <div class="dish-badge">Premium</div>
+                            <img src="/Public/Images/Vajillas/set-porcelana.jpg" alt="Set Porcelana" class="img-fluid dish-img">
+                            <div class="dish-body">
+                                <h4>Set Porcelana</h4>
+                                <span class="dish-code">#1234567</span>
+                                <p class="dish-description">Juego completo para 6 personas con filete dorado.</p>
+                                <div class="dish-specs">
+                                    <span><i class="bi bi-people-fill text-gold"></i> Para 6 personas</span>
+                                </div>
+                                <a href="#porcelana-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detalles por Tipo de Vajilla -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <!-- Talavera -->
+                <div class="dish-detail-section" id="talavera-details">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Vajilla Talavera</h2>
+                            <p class="lead">Artesanía mexicana con diseños tradicionales.</p>
+                            <ul class="dish-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Material:</strong> Cerámica de alta calidad con esmaltes minerales</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Diseño:</strong> Motivos florales y geométricos en azul cobalto, amarillo y verde</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Proceso:</strong> Hecho completamente a mano por artesanos mexicanos</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Resistencia:</strong> Aptas para horno y microondas (no aptas para lavavajillas)</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Recomendación:</strong> Bodas temáticas, eventos culturales y celebraciones tradicionales</li>
+                            </ul>
+                            <div class="d-flex gap-3">
+                                <a href="/contacto" class="btn btn-dark">Cotizar ahora</a>
+                                <a href="/Views/Views/manteleria.html" class="btn btn-outline-gold">Ver mantelería compatible</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="dish-gallery">
+                                <img src="/Public/Images/Vajillas/talavera-detalle-1.jpg" alt="Detalle talavera 1" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Vajillas/talavera-detalle-2.jpg" alt="Detalle talavera 2" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Vajillas/talavera-detalle-3.jpg" alt="Evento con talavera" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barro -->
+                <div class="dish-detail-section mt-5 pt-5" id="barro-details">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Vajilla de Barro</h2>
+                            <p class="lead">Autenticidad y calidez para tus eventos.</p>
+                            <ul class="dish-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Material:</strong> Barro natural cocido a alta temperatura</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Acabados:</strong> Natural, bruñido o con decoraciones pintadas a mano</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Característica:</strong> Mantiene temperatura de alimentos por más tiempo</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Cuidados:</strong> Lavado manual recomendado, curar antes del primer uso</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Recomendación:</strong> Eventos rústicos, bodas campestres y cenas temáticas</li>
+                            </ul>
+                            <div class="d-flex gap-3">
+                                <a href="/contacto" class="btn btn-dark">Cotizar ahora</a>
+                                <a href="/Views/Views/manteleria.html" class="btn btn-outline-gold">Ver mantelería compatible</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="dish-gallery">
+                                <img src="/Public/Images/Vajillas/barro-detalle-1.jpg" alt="Detalle barro 1" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Vajillas/barro-detalle-2.jpg" alt="Detalle barro 2" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Vajillas/barro-detalle-3.jpg" alt="Evento con barro" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Porcelana -->
+                <div class="dish-detail-section mt-5 pt-5" id="porcelana-details">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Vajilla de Porcelana</h2>
+                            <p class="lead">Elegancia y sofisticación para eventos formales.</p>
+                            <ul class="dish-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Material:</strong> Porcelana de alta calidad con filete dorado 24k</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Diseño:</strong> Blanco clásico con detalles dorados o plateados</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Resistencia:</strong> Aptas para lavavajillas, microondas y horno</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Translucidez:</strong> Característica de la porcelana de alta calidad</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Recomendación:</strong> Bodas elegantes, eventos corporativos y cenas de gala</li>
+                            </ul>
+                            <div class="d-flex gap-3">
+                                <a href="/contacto" class="btn btn-dark">Cotizar ahora</a>
+                                <a href="/Views/Views/manteleria.html" class="btn btn-outline-gold">Ver mantelería compatible</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="dish-gallery">
+                                <img src="/Public/Images/Vajillas/porcelana-detalle-1.jpg" alt="Detalle porcelana 1" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Vajillas/porcelana-detalle-2.jpg" alt="Detalle porcelana 2" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Vajillas/porcelana-detalle-3.jpg" alt="Evento con porcelana" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sets Completos -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Sets Completos para Eventos</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="set-completo-card">
+                            <div class="set-header bg-gold text-dark">
+                                <h3>Set Básico</h3>
+                                <span>Para 12 personas</span>
+                            </div>
+                            <div class="set-body">
+                                <ul>
+                                    <li>12 platos llanos</li>
+                                    <li>12 platos hondos</li>
+                                    <li>12 platos de postre</li>
+                                    <li>12 tazas</li>
+                                    <li>Juego de cubiertos básico</li>
+                                </ul>
+                                <div class="set-price">$2,850.00</div>
+                                <a href="/contacto" class="btn btn-gold w-100">Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="set-completo-card">
+                            <div class="set-header bg-gold text-dark">
+                                <h3>Set Estándar</h3>
+                                <span>Para 24 personas</span>
+                            </div>
+                            <div class="set-body">
+                                <ul>
+                                    <li>24 platos llanos</li>
+                                    <li>24 platos hondos</li>
+                                    <li>24 platos de postre</li>
+                                    <li>24 tazas</li>
+                                    <li>Juego de cubiertos premium</li>
+                                    <li>12 fuentes de servir</li>
+                                </ul>
+                                <div class="set-price">$5,400.00</div>
+                                <a href="/contacto" class="btn btn-gold w-100">Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="set-completo-card">
+                            <div class="set-header bg-gold text-dark">
+                                <h3>Set Premium</h3>
+                                <span>Para 50 personas</span>
+                            </div>
+                            <div class="set-body">
+                                <ul>
+                                    <li>50 platos llanos</li>
+                                    <li>50 platos hondos</li>
+                                    <li>50 platos de postre</li>
+                                    <li>50 tazas</li>
+                                    <li>Juego de cubiertos de acero inoxidable</li>
+                                    <li>20 fuentes de servir</li>
+                                    <li>10 jarras de agua</li>
+                                    <li>5 bandejas</li>
+                                </ul>
+                                <div class="set-price">$10,800.00</div>
+                                <a href="/contacto" class="btn btn-gold w-100">Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-5 bg-gold text-dark">
+            <div class="container text-center">
+                <h2 class="mb-4">¿Necesitas asesoría para elegir tu vajilla?</h2>
+                <p class="lead mb-4">Nuestros expertos te ayudarán a seleccionar el estilo perfecto para tu evento.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="/contacto" class="btn btn-dark btn-lg px-4">Contáctanos</a>
+                    <a href="/Views/mobiliario.html" class="btn btn-outline-dark btn-lg px-4">Ver mobiliario completo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer-container"></div>
+    <script src="/Backend/Components/load-footer.js"></script>
+</body>
+</html>

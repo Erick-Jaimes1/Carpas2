@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristalería para Eventos - Carpas Up & Down</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/Styles/Views/cristaleria.css">
+</head>
+<body>
+    <script src="/Backend/Components/load-menu.js"></script>
+
+    <main>
+        <!-- Hero Section para Cristalería -->
+        <section class="hero-section position-relative">
+            <img src="/Public/Images/Cristaleria/hero-cristaleria.jpg" alt="Cristalería para eventos" class="img-fluid w-100 hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-text position-absolute text-center text-white">
+                <h1 class="display-3 fw-bold mb-3">Cristalería Elegante</h1>
+                <p class="lead fs-3">El toque perfecto para tu mesa de evento</p>
+            </div>
+        </section>
+
+        <!-- Tipos de Cristalería -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Nuestra Colección de Cristalería</h2>
+                
+                <!-- Copas -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="sub-section-title mb-4"><i class="bi bi-cup-straw text-gold me-2"></i> Copas</h3>
+                    </div>
+                    
+                    <!-- Copa Vino Tinto -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="vino-tinto">
+                            <div class="glass-header">
+                                <h4>Copa Vino Tinto</h4>
+                                <span class="glass-code">#0021</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/copa-tinto.jpg" alt="Copa Vino Tinto" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Forma amplia y redondeada para resaltar aromas y sabores de vinos tintos.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 550ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 23cm</span>
+                                </div>
+                                <a href="#vino-tinto-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Copa Vino Blanco -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="vino-blanco">
+                            <div class="glass-header">
+                                <h4>Copa Vino Blanco</h4>
+                                <span class="glass-code">#0022</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/copa-blanco.jpg" alt="Copa Vino Blanco" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Estilizada y alta para mantener la temperatura y realzar notas frutales.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 450ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 25cm</span>
+                                </div>
+                                <a href="#vino-blanco-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Copa Flauta -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="flauta">
+                            <div class="glass-header">
+                                <h4>Copa Flauta</h4>
+                                <span class="glass-code">#0023</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/copa-flauta.jpg" alt="Copa Flauta" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Alta y estrecha para mantener las burbujas en espumosos y champañas.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 180ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 27cm</span>
+                                </div>
+                                <a href="#flauta-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Copa Coñaquera -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="conaquera">
+                            <div class="glass-header">
+                                <h4>Copa Coñaquera</h4>
+                                <span class="glass-code">#0024</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/copa-conac.jpg" alt="Copa Coñaquera" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Diseñada para sostenerla en la palma y calentar ligeramente el coñac.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 250ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 15cm</span>
+                                </div>
+                                <a href="#conaquera-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Copa Martini -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="martini">
+                            <div class="glass-header">
+                                <h4>Copa Martini</h4>
+                                <span class="glass-code">#0025</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/copa-martini.jpg" alt="Copa Martini" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Forma de "V" invertida ideal para cócteles como Martini o Cosmopolitan.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 200ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 20cm</span>
+                                </div>
+                                <a href="#martini-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Copa Brandy -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="brandy">
+                            <div class="glass-header">
+                                <h4>Copa Brandy</h4>
+                                <span class="glass-code">#0026</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/copa-brandy.jpg" alt="Copa Brandy" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Similar a la coñaquera pero más grande para brandy o armagnac.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 300ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 18cm</span>
+                                </div>
+                                <a href="#brandy-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Copa Diamante -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="diamante">
+                            <div class="glass-header">
+                                <h4>Copa Diamante</h4>
+                                <span class="glass-code">#0033</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/copa-diamante.jpg" alt="Copa Diamante" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Diseño facetado que evoca un diamante, ideal para eventos de lujo.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 400ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 22cm</span>
+                                </div>
+                                <a href="#diamante-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vasos -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="sub-section-title mb-4"><i class="bi bi-cup text-gold me-2"></i> Vasos</h3>
+                    </div>
+                    
+                    <!-- Vaso Highball -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="highball">
+                            <div class="glass-header">
+                                <h4>Vaso Highball</h4>
+                                <span class="glass-code">#0029</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/vaso-highball.jpg" alt="Vaso Highball" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Alto y recto, ideal para gin tonic, whisky con soda o cócteles con hielo.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 350ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 15cm</span>
+                                </div>
+                                <a href="#highball-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vaso Old Fashioned -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="old-fashioned">
+                            <div class="glass-header">
+                                <h4>Vaso Old Fashioned</h4>
+                                <span class="glass-code">#0032</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/vaso-oldfashioned.jpg" alt="Vaso Old Fashioned" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Bajo y robusto con paredes gruesas, perfecto para whisky puro.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 300ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 9cm</span>
+                                </div>
+                                <a href="#old-fashioned-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vaso Pilsner -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="pilsner">
+                            <div class="glass-header">
+                                <h4>Vaso Pilsner</h4>
+                                <span class="glass-code">#0030</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/vaso-pilsner.jpg" alt="Vaso Pilsner" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Largo y estrecho en la base, abriéndose ligeramente hacia la boca.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 500ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 20cm</span>
+                                </div>
+                                <a href="#pilsner-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vaso Tequilero -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="glass-card" id="tequilero">
+                            <div class="glass-header">
+                                <h4>Vaso Tequilero</h4>
+                                <span class="glass-code">#0031</span>
+                            </div>
+                            <img src="/Public/Images/Cristaleria/vaso-tequilero.jpg" alt="Vaso Tequilero" class="img-fluid glass-img">
+                            <div class="glass-body">
+                                <p>Pequeño y cilíndrico, perfecto para shots de tequila o licores.</p>
+                                <div class="glass-specs">
+                                    <span><i class="bi bi-droplet-fill text-gold"></i> Capacidad: 60ml</span>
+                                    <span><i class="bi bi-ruler-fill text-gold"></i> Altura: 8cm</span>
+                                </div>
+                                <a href="#tequilero-details" class="btn btn-outline-gold w-100 mt-2">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detalles de Cristalería -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Detalles de Nuestra Cristalería</h2>
+                
+                <!-- Materiales y Cuidados -->
+                <div class="row mb-5">
+                    <div class="col-lg-6">
+                        <div class="detail-card">
+                            <h3><i class="bi bi-gem text-gold me-2"></i> Materiales</h3>
+                            <p>Nuestra cristalería está fabricada con vidrio de borosilicato de alta calidad, que ofrece:</p>
+                            <ul>
+                                <li>Mayor resistencia a golpes y cambios de temperatura</li>
+                                <li>Transparencia excepcional para realzar las bebidas</li>
+                                <li>Bordes pulidos para mayor comodidad al beber</li>
+                                <li>Libre de plomo y otros metales pesados</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="detail-card">
+                            <h3><i class="bi bi-heart text-gold me-2"></i> Cuidados</h3>
+                            <p>Para mantener tu cristalería en perfecto estado:</p>
+                            <ul>
+                                <li>Lavar preferentemente a mano con agua tibia y jabón neutro</li>
+                                <li>Secar inmediatamente con paño suave para evitar manchas</li>
+                                <li>Almacen en posición vertical, preferiblemente separados</li>
+                                <li>Evitar cambios bruscos de temperatura</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Guía de Uso -->
+                <div class="guide-card">
+                    <h3 class="text-center mb-4"><i class="bi bi-book text-gold me-2"></i> Guía de Uso</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="guide-item">
+                                <div class="guide-icon bg-gold">
+                                    <i class="bi bi-cup-straw"></i>
+                                </div>
+                                <h4>Vinos</h4>
+                                <p>Utiliza copas específicas para cada tipo de vino para realzar sus características.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="guide-item">
+                                <div class="guide-icon bg-gold">
+                                    <i class="bi bi-droplet"></i>
+                                </div>
+                                <h4>Cócteles</h4>
+                                <p>Elige vasos según el tipo de preparación para mantener la temperatura y presentación.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="guide-item">
+                                <div class="guide-icon bg-gold">
+                                    <i class="bi bi-emoji-sunglasses"></i>
+                                </div>
+                                <h4>Licores</h4>
+                                <p>Las copas pequeñas ayudan a concentrar los aromas de bebidas fuertes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sets y Combinaciones -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Sets y Combinaciones</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="set-card">
+                            <img src="/Public/Images/Cristaleria/set-vino.jpg" alt="Set de Vino" class="img-fluid set-img">
+                            <div class="set-body">
+                                <h3>Set Vino Premium</h3>
+                                <p>Incluye copas para tinto, blanco y espumoso (6 de cada una)</p>
+                                <div class="set-price">$1,850.00</div>
+                                <a href="/contacto" class="btn btn-gold w-100 mt-2">Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="set-card">
+                            <img src="/Public/Images/Cristaleria/set-coctel.jpg" alt="Set de Cóctel" class="img-fluid set-img">
+                            <div class="set-body">
+                                <h3>Set Cóctel Clásico</h3>
+                                <p>Incluye vasos highball, old fashioned y martini (6 de cada uno)</p>
+                                <div class="set-price">$1,450.00</div>
+                                <a href="/contacto" class="btn btn-gold w-100 mt-2">Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="set-card">
+                            <img src="/Public/Images/Cristaleria/set-completo.jpg" alt="Set Completo" class="img-fluid set-img">
+                            <div class="set-body">
+                                <h3>Set Evento Completo</h3>
+                                <p>Combina copas de vino, vasos para cóctel y licores (4 de cada modelo)</p>
+                                <div class="set-price">$2,650.00</div>
+                                <a href="/contacto" class="btn btn-gold w-100 mt-2">Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-5 bg-gold text-dark">
+            <div class="container text-center">
+                <h2 class="mb-4">¿Necesitas asesoría para elegir tu cristalería?</h2>
+                <p class="lead mb-4">Nuestros expertos te ayudarán a seleccionar las piezas perfectas para tu evento.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="/contacto" class="btn btn-dark btn-lg px-4">Contáctanos</a>
+                    <a href="/Views/mobiliario.html" class="btn btn-outline-dark btn-lg px-4">Ver mobiliario completo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer-container"></div>
+    <script src="/Backend/Components/load-footer.js"></script>
+</body>
+</html>

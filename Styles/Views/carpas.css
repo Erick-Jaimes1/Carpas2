@@ -1,0 +1,216 @@
+/* Estilos para las tarjetas de carpas */
+.tent-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+    position: relative;
+}
+
+.tent-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+.tent-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tent-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.tent-card:hover .tent-img {
+    transform: scale(1.05);
+}
+
+.tent-body {
+    padding: 1.5rem;
+}
+
+.tent-body h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.tent-details {
+    margin-bottom: 1.5rem;
+}
+
+.tent-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para secciones de detalle */
+.tent-detail-section {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.tent-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.tent-features li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.tent-features ul {
+    list-style-type: circle;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.tent-gallery {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+/* Estilos para configurador */
+.configurator-card {
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.configurator-card h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.5rem;
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+}
+
+.configurator-options {
+    padding: 0 1rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-select {
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Estilos para galería */
+.gallery-item {
+    position: relative;
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-overlay p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .tent-img {
+        height: 200px;
+    }
+    
+    .gallery-item img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title-left {
+        text-align: center;
+    }
+    
+    .section-title-left::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .tent-features li {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .tent-img {
+        height: 180px;
+    }
+    
+    .gallery-item img {
+        height: 120px;
+    }
+    
+    .configurator-card {
+        padding: 1rem;
+    }
+}

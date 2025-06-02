@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpas para Eventos - Carpas Up & Down</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/Styles/Views/carpas.css">
+</head>
+<body>
+    <script src="/Backend/Components/load-menu.js"></script>
+
+    <main>
+        <!-- Hero Section para Carpas -->
+        <section class="hero-section position-relative">
+            <img src="/Public/Images/Carpas/hero-carpas.jpg" alt="Carpas para eventos" class="img-fluid w-100 hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-text position-absolute text-center text-white">
+                <h1 class="display-3 fw-bold mb-3">Carpas Elegantes</h1>
+                <p class="lead fs-3">Espacios perfectos para tus eventos especiales</p>
+            </div>
+        </section>
+
+        <!-- Tipos de Carpas -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Nuestros Modelos de Carpas</h2>
+                <div class="row g-4">
+                    <!-- Carpa Básica -->
+                    <div class="col-md-4">
+                        <div class="tent-card">
+                            <div class="tent-badge">Económica</div>
+                            <img src="/Public/Images/Carpas/basica.jpg" alt="Carpa Básica" class="img-fluid tent-img">
+                            <div class="tent-body">
+                                <h3>Carpa Básica</h3>
+                                <div class="tent-details">
+                                    <p><i class="bi bi-check-circle-fill text-gold me-2"></i> Entelado liso en color blanco</p>
+                                    <p><i class="bi bi-check-circle-fill text-gold me-2"></i> Altura de 4 metros</p>
+                                    <p><i class="bi bi-check-circle-fill text-gold me-2"></i> Anchos: 10m, 15m, 20m</p>
+                                </div>
+                                <a href="#basica" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carpa de Lujo -->
+                    <div class="col-md-4">
+                        <div class="tent-card">
+                            <div class="tent-badge">Recomendada</div>
+                            <img src="/Public/Images/Carpas/lujo.jpg" alt="Carpa de Lujo" class="img-fluid tent-img">
+                            <div class="tent-body">
+                                <h3>Carpa de Lujo</h3>
+                                <div class="tent-details">
+                                    <p><i class="bi bi-check-circle-fill text-gold me-2"></i> Entelado plisado a dos aguas</p>
+                                    <p><i class="bi bi-check-circle-fill text-gold me-2"></i> Colores: blanca, negra, ivory</p>
+                                    <p><i class="bi bi-check-circle-fill text-gold me-2"></i> Sin postes intermedios</p>
+                                </div>
+                                <a href="#lujo" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carpa Premium -->
+                    <div class="col-md-4">
+                        <div class="tent-card">
+                            <div class="tent-badge">Premium</div>
+                            <img src="/Public/Images/Carpas/premium.jpg" alt="Carpa Premium" class="img-fluid tent-img">
+                            <div class="tent-body">
+                                <h3>Carpa Premium</h3>
+                                <div class="tent-details">
+                                    <p><i class="bi bi-check-circle-fill text-gold me-2"></i> Entelado plisado con decoración</p>
+                                    <p><i class="bi bi-check-circle-fill text-gold me-2"></i> Opciones de iluminación LED</p>
+                                    <p><i class="bi bi-check-circle-fill text-gold me-2"></i> Pantallas de macramé iluminadas</p>
+                                </div>
+                                <a href="#premium" class="btn btn-gold w-100">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detalles por Tipo de Carpa -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <!-- Carpa Básica -->
+                <div class="tent-detail-section" id="basica">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Carpa Básica</h2>
+                            <p class="lead">Solución funcional y económica para tus eventos.</p>
+                            <ul class="tent-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Estructura:</strong> Armazón metálico resistente</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Cobertura:</strong> Tela lisa en color blanco estándar</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Dimensiones:</strong> Anchos de 10m, 15m y 20m sin postes intermedios</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Altura:</strong> 4 metros uniformes</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Incluye:</strong> Velares (telas decorativas en patas) e iluminación básica profesional</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Protección:</strong> Cortinas de lona en tres lados (un lado descubierto para acceso)</li>
+                            </ul>
+                            <a href="/contacto" class="btn btn-dark mt-3">Cotizar ahora</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="tent-gallery">
+                                <img src="/Public/Images/Carpas/basica-1.jpg" alt="Vista exterior carpa básica" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Carpas/basica-2.jpg" alt="Interior carpa básica" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Carpas/basica-3.jpg" alt="Detalle estructura carpa básica" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carpa de Lujo -->
+                <div class="tent-detail-section mt-5 pt-5" id="lujo">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Carpa de Lujo</h2>
+                            <p class="lead">Elegancia y estilo para eventos especiales.</p>
+                            <ul class="tent-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Estructura:</strong> Diseño premium sin postes intermedios</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Cobertura:</strong> Tela plisada a dos aguas para mayor elegancia</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Colores:</strong> Blanca, negra o ivory (a elección)</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Dimensiones:</strong> Anchos de 10m, 15m y 20m con largo modular (múltiplos de 5m)</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Incluye:</strong> Velares decorativas, iluminación profesional y cortinas en tres lados</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Ventaja:</strong> Espacio diáfano sin obstrucciones visuales</li>
+                            </ul>
+                            <a href="/contacto" class="btn btn-dark mt-3">Cotizar ahora</a>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="tent-gallery">
+                                <img src="/Public/Images/Carpas/lujo-1.jpg" alt="Vista exterior carpa lujo" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Carpas/lujo-2.jpg" alt="Detalle plisado carpa lujo" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Carpas/lujo-3.jpg" alt="Evento en carpa lujo" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carpa Premium -->
+                <div class="tent-detail-section mt-5 pt-5" id="premium">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="section-title-left mb-4">Carpa Premium</h2>
+                            <p class="lead">La máxima expresión de elegancia para eventos exclusivos.</p>
+                            <ul class="tent-features">
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Estructura:</strong> Diseño de lujo con entelado plisado premium</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Decoración:</strong> Tres opciones disponibles:
+                                    <ul class="mt-2">
+                                        <li>1. Luz LED integrada en el entelado</li>
+                                        <li>2. Iluminación vintage tipo bombilla</li>
+                                        <li>3. Pantallas de macramé iluminadas con luz vintage</li>
+                                    </ul>
+                                </li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Colores:</strong> Blanca, negra o ivory (combinable con decoración)</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Dimensiones:</strong> Anchos de 10m, 15m y 20m con largo a medida</li>
+                                <li><i class="bi bi-check-circle-fill text-gold me-2"></i> <strong>Incluye:</strong> Todo lo de la carpa de lujo más decoración seleccionada</li>
+                            </ul>
+                            <a href="/contacto" class="btn btn-dark mt-3">Cotizar ahora</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="tent-gallery">
+                                <img src="/Public/Images/Carpas/premium-1.jpg" alt="Carpa premium con LED" class="img-fluid rounded mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Carpas/premium-2.jpg" alt="Carpa premium con macramé" class="img-fluid rounded">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/Public/Images/Carpas/premium-3.jpg" alt="Detalle iluminación vintage" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Configurador de Carpas -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Configura tu Carpa Ideal</h2>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="configurator-card">
+                            <h3><i class="bi bi-rulers text-gold me-2"></i> Dimensiones</h3>
+                            <div class="configurator-options">
+                                <div class="form-group">
+                                    <label>Ancho:</label>
+                                    <select class="form-select">
+                                        <option>10 metros</option>
+                                        <option>15 metros</option>
+                                        <option>20 metros</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label>Largo (módulos de 5m):</label>
+                                    <select class="form-select">
+                                        <option>5 metros</option>
+                                        <option>10 metros</option>
+                                        <option>15 metros</option>
+                                        <option>20 metros</option>
+                                        <option>25 metros</option>
+                                        <option>30 metros</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="configurator-card">
+                            <h3><i class="bi bi-palette text-gold me-2"></i> Personalización</h3>
+                            <div class="configurator-options">
+                                <div class="form-group">
+                                    <label>Modelo de carpa:</label>
+                                    <select class="form-select">
+                                        <option>Básica</option>
+                                        <option>Lujo</option>
+                                        <option>Premium</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label>Color:</label>
+                                    <select class="form-select">
+                                        <option>Blanco</option>
+                                        <option>Negro</option>
+                                        <option>Ivory</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mt-3" id="decoracion-group">
+                                    <label>Decoración (solo Premium):</label>
+                                    <select class="form-select">
+                                        <option>Ninguna</option>
+                                        <option>LED integrado</option>
+                                        <option>Iluminación vintage</option>
+                                        <option>Macramé iluminado</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 text-center mt-4">
+                        <button class="btn btn-gold btn-lg px-5">Solicitar cotización</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Eventos -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Nuestras Carpas en Eventos</h2>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <a href="/Public/Images/Galeria/evento-1.jpg" class="gallery-item" data-lightbox="event-gallery">
+                            <img src="/Public/Images/Galeria/evento-1.jpg" alt="Evento con carpa blanca" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                                <p>Boda elegante</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/Public/Images/Galeria/evento-2.jpg" class="gallery-item" data-lightbox="event-gallery">
+                            <img src="/Public/Images/Galeria/evento-2.jpg" alt="Evento con carpa negra" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                                <p>Evento corporativo</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/Public/Images/Galeria/evento-3.jpg" class="gallery-item" data-lightbox="event-gallery">
+                            <img src="/Public/Images/Galeria/evento-3.jpg" alt="Evento con carpa premium" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                                <p>Fiesta de gala</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="/Public/Images/Galeria/evento-4.jpg" class="gallery-item" data-lightbox="event-gallery">
+                            <img src="/Public/Images/Galeria/evento-4.jpg" alt="Evento con iluminación LED" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                                <p>Carpa con decoración LED</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="/Public/Images/Galeria/evento-5.jpg" class="gallery-item" data-lightbox="event-gallery">
+                            <img src="/Public/Images/Galeria/evento-5.jpg" alt="Evento con macramé" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                                <p>Carpa con macramé iluminado</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="/galeria" class="btn btn-outline-gold">Ver más eventos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-5 bg-gold text-dark">
+            <div class="container text-center">
+                <h2 class="mb-4">¿Listo para transformar tu evento?</h2>
+                <p class="lead mb-4">Contáctanos y crearemos el espacio perfecto para tu ocasión especial.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="/contacto" class="btn btn-dark btn-lg px-4">Cotizar ahora</a>
+                    <a href="tel:+521234567890" class="btn btn-outline-dark btn-lg px-4"><i class="bi bi-telephone me-2"></i>Llamar ahora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <div id="footer-container"></div>
+    <script src="/Backend/Components/load-footer.js"></script>
+    
+    <script>
+        // Mostrar/ocultar opción de decoración según selección
+        document.querySelector('select[name="modelo"]').addEventListener('change', function() {
+            const decoracionGroup = document.getElementById('decoracion-group');
+            if(this.value === 'Premium') {
+                decoracionGroup.style.display = 'block';
+            } else {
+                decoracionGroup.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

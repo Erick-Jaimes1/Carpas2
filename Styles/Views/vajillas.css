@@ -1,0 +1,212 @@
+/* Estilos para las tarjetas de vajilla */
+.dish-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.dish-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+.dish-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.dish-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.dish-card:hover .dish-img {
+    transform: scale(1.05);
+}
+
+.dish-body {
+    padding: 1.25rem;
+}
+
+.dish-body h4 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.25rem;
+    color: var(--color-black);
+}
+
+.dish-code {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+}
+
+.dish-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    min-height: 60px;
+}
+
+.dish-specs {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.dish-specs span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Estilos para secciones */
+.sub-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--color-black);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-gold);
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para detalles de vajilla */
+.dish-detail-section {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.dish-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.dish-features li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.dish-gallery {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+/* Estilos para sets completos */
+.set-completo-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+}
+
+.set-completo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.set-header {
+    padding: 1rem;
+    text-align: center;
+}
+
+.set-header h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.25rem;
+}
+
+.set-header span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.set-body {
+    padding: 1.5rem;
+}
+
+.set-body ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.set-body li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.set-body li:before {
+    content: "•";
+    color: var(--color-gold);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.set-price {
+    font-weight: 700;
+    color: var(--color-black);
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .dish-img {
+        height: 180px;
+    }
+    
+    .dish-description {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .sub-section-title {
+        font-size: 1.3rem;
+    }
+    
+    .dish-detail-section .row {
+        flex-direction: column-reverse;
+    }
+    
+    .dish-detail-section .col-lg-6 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .dish-img {
+        height: 160px;
+    }
+    
+    .set-completo-card {
+        margin-bottom: 1.5rem;
+    }
+}

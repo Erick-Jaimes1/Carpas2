@@ -1,0 +1,148 @@
+/* Estilos para paquetes */
+.package-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.package-header {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.package-header h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0;
+}
+
+.package-body {
+    padding: 1.5rem;
+}
+
+.package-body ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.package-body li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.package-body li:before {
+    content: "•";
+    color: var(--color-gold);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.package-price {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: var(--color-black);
+}
+
+/* Responsive adicional */
+@media (max-width: 992px) {
+    .special-img-container {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .package-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.special-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--color-gold);
+            color: var(--color-black);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            z-index: 2;
+        }
+        
+        .special-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            background: #fff;
+            height: 100%;
+            position: relative;
+        }
+        
+        .special-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+        }
+        
+        .special-img-container {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .special-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .special-card:hover .special-img {
+            transform: scale(1.05);
+        }
+        
+        .special-body {
+            padding: 1.5rem;
+        }
+        
+        .special-body h3 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 0.75rem;
+            color: var(--color-black);
+        }
+        
+        .special-body p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .special-price {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--color-black);
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .special-img-container {
+                height: 200px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .special-img-container {
+                height: 180px;
+            }
+        }

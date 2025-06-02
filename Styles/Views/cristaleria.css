@@ -1,0 +1,230 @@
+/* Estilos para las tarjetas de cristalería */
+.glass-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.glass-header {
+    padding: 1.25rem 1.25rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.glass-header h4 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    color: var(--color-black);
+}
+
+.glass-code {
+    background-color: #f5f5f5;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.glass-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 1.5rem;
+    transition: transform 0.5s ease;
+}
+
+.glass-card:hover .glass-img {
+    transform: scale(1.1);
+}
+
+.glass-body {
+    padding: 0 1.25rem 1.5rem;
+}
+
+.glass-body p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    min-height: 60px;
+}
+
+.glass-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.glass-specs span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Estilos para secciones */
+.sub-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--color-black);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-gold);
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para tarjetas de detalles */
+.detail-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.detail-card h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.detail-card ul {
+    padding-left: 1.5rem;
+}
+
+.detail-card li {
+    margin-bottom: 0.75rem;
+}
+
+/* Estilos para guía */
+.guide-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.guide-item {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.guide-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: var(--color-black);
+}
+
+.guide-item h4 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.75rem;
+}
+
+.guide-item p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Estilos para sets */
+.set-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100%;
+}
+
+.set-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.15);
+}
+
+.set-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.set-card:hover .set-img {
+    transform: scale(1.05);
+}
+
+.set-body {
+    padding: 1.5rem;
+}
+
+.set-body h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.75rem;
+    color: var(--color-black);
+}
+
+.set-body p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.set-price {
+    font-weight: 700;
+    color: var(--color-black);
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .glass-img {
+        height: 180px;
+    }
+    
+    .set-img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sub-section-title {
+        font-size: 1.3rem;
+    }
+    
+    .glass-body p {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .glass-img {
+        height: 160px;
+        padding: 1rem;
+    }
+    
+    .set-img {
+        height: 160px;
+    }
+    
+    .guide-item {
+        padding: 1rem;
+    }
+}
