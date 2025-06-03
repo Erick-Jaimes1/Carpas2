@@ -1,0 +1,117 @@
+/* Contact Page Styles */
+.contact-info-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid rgba(203, 161, 53, 0.2);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.1);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgba(203, 161, 53, 0.1);
+}
+
+/* Contact Form */
+.contact-form .form-control,
+.contact-form .form-select {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    height: auto;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 0.25rem rgba(203, 161, 53, 0.25);
+}
+
+.contact-form label {
+    color: #666;
+    font-weight: 500;
+}
+
+/* Map Container */
+.map-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 0 0 12px 12px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(20%) contrast(90%);
+}
+
+/* Schedule Card */
+.schedule-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(203, 161, 53, 0.2);
+}
+
+.schedule-item:last-child {
+    border-bottom: none !important;
+}
+
+/* WhatsApp CTA */
+.bg-whatsapp {
+    background-color: rgba(37, 211, 102, 0.1);
+    border-top: 1px solid rgba(37, 211, 102, 0.2);
+    border-bottom: 1px solid rgba(37, 211, 102, 0.2);
+}
+
+.btn-success {
+    background-color: #25D366;
+    border-color: #25D366;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(18, 140, 126, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .map-container {
+        height: 350px;
+    }
+    
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .map-container {
+        height: 300px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
