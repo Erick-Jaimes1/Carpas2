@@ -1,0 +1,157 @@
+/* Garantías Page Styles */
+.warranty-hero {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.warranty-content {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.warranty-section {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.warranty-card {
+    transition: all 0.3s ease;
+}
+
+.warranty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-gold) !important;
+}
+
+.warranty-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(203, 161, 53, 0.1);
+    border-radius: 50%;
+}
+
+.warranty-list {
+    padding-left: 20px;
+}
+
+.warranty-list li {
+    margin-bottom: 8px;
+}
+
+.coverage-list li:before {
+    content: "✓";
+    color: var(--color-gold);
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1.5em;
+}
+
+.exclusion-list li:before {
+    content: "✗";
+    color: #dc3545;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1.5em;
+}
+
+.process-steps {
+    margin-top: 20px;
+}
+
+.process-step {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.step-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--color-gold);
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.warranty-contact {
+    border: 1px solid rgba(203, 161, 53, 0.3);
+}
+
+.contact-method i {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(203, 161, 53, 0.1);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Acordeón */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(203, 161, 53, 0.1);
+    color: var(--color-black);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(203, 161, 53, 0.25);
+    border-color: var(--color-gold);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .warranty-content {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .warranty-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .warranty-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .warranty-hero p.lead {
+        font-size: 1.1rem;
+    }
+    
+    .contact-method {
+        margin-bottom: 20px;
+    }
+}

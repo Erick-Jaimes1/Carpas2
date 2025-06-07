@@ -1,0 +1,64 @@
+/* Política de Privacidad Page Styles */
+.privacy-hero {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.privacy-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-section {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.privacy-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.privacy-list {
+    padding-left: 20px;
+}
+
+.privacy-list li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.privacy-contact {
+    border-left: 4px solid var(--color-gold);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .privacy-content {
+        padding: 20px;
+    }
+    
+    .privacy-number {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .privacy-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .privacy-hero p.lead {
+        font-size: 1.1rem;
+    }
+}

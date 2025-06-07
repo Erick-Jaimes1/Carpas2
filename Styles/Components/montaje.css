@@ -1,0 +1,213 @@
+/* Montaje Page Styles */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--color-gold);
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    margin-left: -3px;
+    border-radius: 10px;
+}
+
+.timeline-step {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-number {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-gold);
+    border-radius: 50%;
+    left: -75px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-black);
+    z-index: 1;
+    border: 4px solid white;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(203, 161, 53, 0.2);
+}
+
+.timeline-content h3 {
+    color: var(--color-gold);
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.timeline-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.timeline-list li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.timeline-list i {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+/* Team Cards */
+.team-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(203, 161, 53, 0.1);
+}
+
+.team-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 3px solid var(--color-gold);
+    border-radius: 50%;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-certifications {
+    margin-top: 15px;
+}
+
+.team-certifications .badge {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Safety Section */
+.safety-image-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.safety-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    min-width: 120px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.safety-item {
+    background-color: rgba(203, 161, 53, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 3px solid var(--color-gold);
+}
+
+.safety-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(203, 161, 53, 0.1);
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .timeline::before {
+        left: 40px;
+    }
+    
+    .timeline-number {
+        left: -65px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .team-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 0;
+    }
+    
+    .timeline::before {
+        display: none;
+    }
+    
+    .timeline-number {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 15px;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .safety-badge {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 20px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+    }
+    
+    .team-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .safety-item {
+        padding: 10px;
+    }
+}

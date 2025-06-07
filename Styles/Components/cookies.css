@@ -1,0 +1,87 @@
+/* Política de Cookies Page Styles */
+.cookies-hero {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.cookies-content {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cookies-section {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.cookies-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.cookies-list {
+    padding-left: 20px;
+}
+
+.cookies-list li {
+    margin-bottom: 8px;
+}
+
+.cookies-contact {
+    border-left: 4px solid var(--color-gold);
+}
+
+/* Tablas */
+.table {
+    margin-bottom: 1rem;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom-width: 1px;
+}
+
+/* Acordeón */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(203, 161, 53, 0.1);
+    color: var(--color-black);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(203, 161, 53, 0.25);
+    border-color: var(--color-gold);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cookies-content {
+        padding: 20px;
+    }
+    
+    .cookies-number {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cookies-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .cookies-hero p.lead {
+        font-size: 1.1rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+}
