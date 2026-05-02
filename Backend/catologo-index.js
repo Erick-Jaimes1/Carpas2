@@ -1,9 +1,11 @@
 // Configuración de imágenes por categoría
+        // Ajusta `PUBLIC_PATH` si el VPS sirve los assets desde otra ruta base
+        const PUBLIC_PATH = '/Public';
         const catalogImages = {
-            mesas: Array.from({length: 32}, (_, i) => `../Public/ImagesMesasCata/${i+1}.jpg`),
-            sillas: Array.from({length: 15}, (_, i) => `.././Public/ImagesSillasCata/${i+1}.jpg`),
-            carpas: Array.from({length: 56}, (_, i) => `../../../Public/ImagesCarpasCata/${i+1}.jpg`),
-            cristaleria: Array.from({length: 16}, (_, i) => `./Public/ImagesCristaleriaCata/${i+1}.jpg`)
+            mesas: Array.from({length: 32}, (_, i) => `${PUBLIC_PATH}/ImagesMesasCata/${i+1}.jpg`),
+            sillas: Array.from({length: 15}, (_, i) => `${PUBLIC_PATH}/ImagesSillasCata/${i+1}.jpg`),
+            carpas: Array.from({length: 56}, (_, i) => `${PUBLIC_PATH}/ImagesCarpasCata/${i+1}.jpg`),
+            cristaleria: Array.from({length: 16}, (_, i) => `${PUBLIC_PATH}/ImagesCristaleriaCata/${i+1}.jpg`)
         };
         
         // Variables globales
@@ -17,7 +19,7 @@
     swiperWrapper.innerHTML = '';
 
     // Cargar imágenes de la categoría seleccionada
-    catalogImages[category].forEach(image => {
+        catalogImages[category].forEach(image => {
         const slide = document.createElement('div');
         slide.className = 'swiper-slide';
 
@@ -29,6 +31,11 @@
         img.alt = category;
         img.className = 'img-fluid';
         img.loading = 'lazy';
+
+        // Loguear en consola si alguna imagen no carga (útil en VPS)
+        img.addEventListener('error', () => {
+            console.warn('Imagen no encontrada:', img.src);
+        });
 
         imgContainer.appendChild(img);
         slide.appendChild(imgContainer);
