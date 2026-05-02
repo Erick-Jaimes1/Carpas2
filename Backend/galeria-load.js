@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Arrays de imágenes por categoría
     const galleryImages = {
-        carpas: Array.from({length: 56}, (_, i) => `/Public/ImagesCarpasCata/${i+1}.jpg`),
-        mesas: Array.from({length: 32}, (_, i) => `/Public/ImagesMesasCata/${i+1}.jpg`),
-        sillas: Array.from({length: 15}, (_, i) => `/Public/ImagesSillasCata/${i+1}.jpg`),
-        cristaleria: Array.from({length: 16}, (_, i) => `/Public/ImagesCristaleriaCata/${i+1}.jpg`),
+        carpas: Array.from({length: 56}, (_, i) => `../../Public/ImagesCarpasCata/${i+1}.jpg`),
+        
+        carpas: Array.from({length: 56}, (_, i) => `../../Public/ImagesCarpasCata/${i+1}.jpg`),
+        mesas: Array.from({length: 32}, (_, i) => `../../Public/ImagesMesasCata/${i+1}.jpg`),
+        sillas: Array.from({length: 15}, (_, i) => `../../Public/ImagesSillasCata/${i+1}.jpg`),
+        cristaleria: Array.from({length: 16}, (_, i) => `../../Public/ImagesCristaleriaCata/${i+1}.jpg`),
     };
 
     // Unir todas las imágenes para la vista "Todo"
